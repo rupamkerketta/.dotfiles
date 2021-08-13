@@ -9,7 +9,7 @@ alias home='cd ~'
 alias root='cd /'
 alias dtop='cd ~/Desktop'
 alias dwld='cd ~/Downloads'
-alias docs='cs ~/Documents'
+alias docs='cd ~/Documents'
 
 # Create a directory and `cd` into it
 mcd(){
