@@ -75,3 +75,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Spell-check Markdown files and Git Commit Messages
 autocmd FileType markdown setlocal spell
 autocmd FileType gitcommit setlocal spell
+
+" Buffer switching
+map <C-Left> :bp<CR>
+map <C-Right> :bn<CR>
