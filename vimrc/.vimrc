@@ -50,7 +50,7 @@ call plug#end()
 
 " Themes and Colors
 set termguicolors " For 24-bit true color support
-colorscheme one
+colorscheme gruvbox
 set background=dark
 
 set completeopt-=preview
@@ -59,7 +59,7 @@ set completeopt-=preview
 autocmd BufWritePre * %s/\s\+$//e
 
 " StatusLine - Airline configs (vim-airline/vim-airline)
-let g:airline_theme='base16_snazzy'
+let g:airline_theme='base16_material_darker'
 let g:airline_section_a=airline#section#create(['mode', ' ', 'branch'])
 let g:airline_section_z=airline#section#create(['Ln %l', ',', 'Col %c'])
 
