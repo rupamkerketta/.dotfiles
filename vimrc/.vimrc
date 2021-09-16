@@ -34,6 +34,9 @@ Plug 'preservim/nerdtree'
 Plug 'rakr/vim-one'
 Plug 'morhetz/gruvbox'
 
+" Automatically clear search highlights after you move your cursor.
+Plug 'haya14busa/is.vim'
+
 " Autocomplete (supports a number of languages)
 Plug 'Valloric/YouCompleteMe'
 
@@ -45,6 +48,10 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
+" FZF
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 
@@ -54,6 +61,9 @@ colorscheme gruvbox
 set background=dark
 
 set completeopt-=preview
+
+" Cycle through splits.
+nnoremap <S-Tab> <C-w>w
 
 " Automatically deletes all trailing whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
@@ -71,6 +81,11 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+" FZF (Buffers)
+nnoremap <silent> <leader>l :Buffers<CR>
+nnoremap <silent> <C-p> :FZF<CR>
+" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
 
 " Spell-check Markdown files and Git Commit Messages
 autocmd FileType markdown setlocal spell

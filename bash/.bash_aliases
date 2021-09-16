@@ -7,9 +7,10 @@ alias tmuxcf='vim ~/.tmux.conf'
 # Folder shortcuts
 alias home='cd ~'
 alias root='cd /'
-alias dtop='cd ~/Desktop'
+alias dskt='cd ~/Desktop'
 alias dwld='cd ~/Downloads'
 alias docs='cd ~/Documents'
+alias gh='cd ~/Documents/github'
 
 # Create a directory and `cd` into it
 mcd(){
